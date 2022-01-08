@@ -1,4 +1,213 @@
-body{
-    background-color: #fff;
-    color: #2a2a2a;
+/* цвет основного текста #757575 */
+/* цвет заголовков #212121 */
+/* белый цвет #FFFFFF */
+
+/* цвет акцента #2196F3 */
+/* цвет button hover героя #188CE8 */
+/* цвет студии #000000 */
+/* цвет фона героя и футтера #2F303A */
+/* вторичный цвет фона #F5F4FA */
+/* цвет фона карточек галереи #EEEEEE */
+/* цвет контактов футера rgba(255, 255, 255, 0.6); */
+
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primery-white-color: #ffffff;
+  --logo-accent-color: #000000;
+  --button-hover-color: #188ce8;
+  --hero-background-color: #2f303a;
+  --team-background-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: var(--primery-white-color);
+  color: var(--primery-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+.list {
+  list-style: none;
+}
+/* Logo */
+
+.logo {
+  color: var(--accent-color);
+
+  font-family: Raleway, sans-serif;
+
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+}
+.accent {
+  color: var(--logo-accent-color);
+}
+
+/* site-nav */
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* Contacts */
+.contacts-section .link {
+  color: var(--primery-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+}
+.contacts-section .link:hover,
+.contacts-section .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--primery-white-color);
+  background-color: var(--hero-background-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Hero button */
+.hero .button {
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+
+  font-family: inherit;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+.hero .button:hover,
+.hero .button:focus {
+  color: var(--primery-white-color);
+  background-color: var(--button-hover-color);
+}
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+/* Features */
+
+.features .title {
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* Наша команда */
+
+.team {
+  background-color: var(--team-background-color);
+}
+.team-section .title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-section .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* Footer */
+.footer {
+  background-color: var(--hero-background-color);
+}
+.footer .accent {
+  color: var(--primery-white-color);
+}
+.footer .link {
+  color: var(--footer-contacts-color);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+
+  text-decoration: none;
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.footer .color {
+  color: var(--primery-white-color);
+}
+/* Портфолио */
+
+/* Filter */
+.filter .button {
+  color: var(--title-text-color);
+  background-color: var(--team-background-color);
+
+  font-family: inherit;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.filter .button:hover,
+.filter .button:focus {
+  color: var(--primery-white-color);
+  background-color: var(--accent-color);
+}
+/* Gallery */
+.gallery > a {
+  text-decoration: none;
+}
+
+.gallery .title {
+  color: var(--title-text-color);
+
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery .text {
+  color: var(--primery-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
 }
