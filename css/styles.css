@@ -194,10 +194,9 @@ body {
   background-color: var(--accent-color);
 }
 /* Gallery */
-.gallery > a {
+.gallery a {
   text-decoration: none;
 }
-
 .gallery .title {
   color: var(--title-text-color);
 
