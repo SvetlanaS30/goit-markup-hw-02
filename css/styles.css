@@ -49,7 +49,7 @@ body {
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav-link {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -59,15 +59,15 @@ body {
 
   text-decoration: none;
 }
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav-link:hover,
+.site-nav-link:focus {
   color: var(--accent-color);
 }
-.site-nav .link.current {
+.site-nav-link.current {
   color: var(--accent-color);
 }
 /* Contacts */
-.contacts-section .link {
+.contacts-link {
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -77,15 +77,17 @@ body {
 
   text-decoration: none;
 }
-.contacts-section .link:hover,
-.contacts-section .link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
 /* Hero */
+.hero {
+  background-color: var(--hero-background-color);
+}
 .hero-title {
   color: var(--primery-white-color);
-  background-color: var(--hero-background-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -96,7 +98,7 @@ body {
   text-transform: uppercase;
 }
 /* Hero button */
-.hero .button {
+.hero-button {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
 
@@ -109,8 +111,8 @@ body {
 
   cursor: pointer;
 }
-.hero .button:hover,
-.hero .button:focus {
+.hero-button:hover,
+.hero-button:focus {
   color: var(--primery-white-color);
   background-color: var(--button-hover-color);
 }
@@ -124,14 +126,14 @@ body {
 }
 /* Features */
 
-.features .title {
+.features-title {
   color: var(--title-text-color);
 
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.features .text {
+.features-text {
   font-size: 14px;
   line-height: 1.71;
 }
@@ -140,14 +142,14 @@ body {
 .team {
   background-color: var(--team-background-color);
 }
-.team-section .title {
+.team-title {
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-.team-section .text {
+.team-text {
   font-size: 16px;
   line-height: 1.19;
 }
@@ -155,10 +157,10 @@ body {
 .footer {
   background-color: var(--hero-background-color);
 }
-.footer .accent {
+.footer-accent {
   color: var(--primery-white-color);
 }
-.footer .link {
+.footer-link {
   color: var(--footer-contacts-color);
   font-style: normal;
   font-size: 14px;
@@ -166,17 +168,17 @@ body {
 
   text-decoration: none;
 }
-.footer .link:hover,
-.footer .link:focus {
+.footer-link:hover,
+.footer-link:focus {
   color: var(--accent-color);
 }
-.footer .color {
+.footer-color {
   color: var(--primery-white-color);
 }
 /* Портфолио */
 
 /* Filter */
-.filter .button {
+.filter-button {
   color: var(--title-text-color);
   background-color: var(--team-background-color);
 
@@ -188,23 +190,23 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-.filter .button:hover,
-.filter .button:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--primery-white-color);
   background-color: var(--accent-color);
 }
 /* Gallery */
-.gallery a {
+.gallery-link {
   text-decoration: none;
 }
-.gallery .title {
+.gallery-title {
   color: var(--title-text-color);
 
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.gallery .text {
+.gallery-text {
   color: var(--primery-text-color);
 
   font-size: 16px;
